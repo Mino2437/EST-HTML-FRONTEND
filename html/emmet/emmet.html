@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+<body>
+  
+  <!--
+    HTML 태그 Emmet
+    [ !+tab ] html 기본 헤더 작성
+
+    [ div>ul>li ] 편집기 마다 명령어는 같으나 사용법이 다름 vscode,
+    ex) [ div>ul*3>li ], [ div>h2+span ], 
+  -->
+  <div>
+    <ul>
+      <li></li>
+    </ul>
+  </div>
+
+  <div>
+    <h2></h2>
+    <span></span>
+  </div>
+
+  <!-- 마지막 만들고 있는 요소 기준의 부모요소
+    [ div>ul>li^h2+span ]
+  -->
+
+  <div>
+    <ul>
+      <li></li>
+    </ul>
+    <h2></h2>
+    <span></span>
+  </div>
+  
+  <!-- div>ul>li^ol>li -->
+  <div>
+    <ul>
+      <li></li>
+    </ul>
+    <ol>
+      <li></li>
+    </ol>
+  </div>
+  
+  [ div>nav>ol>li*3^^div ]
+  
+  div>nav>(ol>li*3div)^div
+  <div>
+    <nav>
+      <ol>
+        <li></li>
+        <li></li>
+        <li></li>
+        <div></div>
+      </ol>
+    </nav>
+    <div></div>
+  </div>
+
+  <!--
+    [ Emmet 속성 ]
+    class(#), 
+    id(.), ->주민등록번호와 같은 느낌
+  -->
+
+  <!-- .+tab -->
+  <div class=""></div>
+
+  <!-- .mx10 -->
+  <div class="mx10"></div>
+
+  <!-- .mx-10.my-10 -->
+  <div class="mx-10 my-10"></div>
+
+  <h2 class="text-lg"></h2>
+
+  <!-- id #, 아이디는 당연히 2개 줄 수 없음, 고유 식별 번호 -->
+
+  <!-- #kms -->
+  <div id="kms"></div>
+  
+  <!-- h2#post-title -->
+  <h2 id="post-title"></h2>
+
+  <!-- a[href=https://www.google.com] -->
+  <a href="https://www.google.com"></a>
+
+  <!-- a[href=0 exp="exp"] -->
+  a[href=0 exp="exp"]
+
+  <!-- img[src="test" alt=image] -->
+  img[src="test" alt=image]
+
+  <!--
+  ol>li*3[id="item$"]
+  ol>li#item$*3
+  -->
+  <ol>
+    <li id="item1"></li>
+    <li id="item2"></li>
+    <li id="item3"></li>
+  </ol>
+
+  <!--
+  
+  ol>li#item$@10*5, 10부터 5번
+   
+  -->
+  <ol>
+    <li id="item10"></li>
+    <li id="item11"></li>
+    <li id="item12"></li>
+    <li id="item13"></li>
+    <li id="item14"></li>
+  </ol>
+
+  <!-- .box{hello world!} -->
+  <div class="box">hello world!</div>
+
+  <!-- .container>ol>li.item*5>a[href="#"]{아이템$} -->
+  <div class="container">
+    <ol>
+      <li class="item"><a href="#">아이템1</a></li>
+      <li class="item"><a href="#">아이템2</a></li>
+      <li class="item"><a href="#">아이템3</a></li>
+      <li class="item"><a href="#">아이템4</a></li>
+      <li class="item"><a href="#">아이템5</a></li>
+    </ol>
+  </div>
+
+  <!-- .list-container>div.item*10{$} -->
+  <div class="list-container">
+    <div class="item">1</div>
+    <div class="item">2</div>
+    <div class="item">3</div>
+    <div class="item">4</div>
+    <div class="item">5</div>
+    <div class="item">6</div>
+    <div class="item">7</div>
+    <div class="item">8</div>
+    <div class="item">9</div>
+    <div class="item">10</div>
+
+    .list-container>.item*10>{$}
+
+  </div> 
+</body>
+</html>

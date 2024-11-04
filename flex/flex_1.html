@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>FLEX TEST 1</title>
+  <link rel="stylesheet" href="./flex_global.css">
+  <link rel="stylesheet" href="./flex_axis_line.css">
+  <!-- 십자가가 컨테이너 안에 들어간거 -->
+
+  <style>
+    .container {
+      /* flex 컨테이너를 만들기위해선 display flex를 해줘야함 
+          flex는 반응형 css */
+      display: flex;
+
+      /*
+          flex-direction 
+        아이템의 배치 방향을 설정합니다.
+          
+        row : 왼쪽에서 오른쪽으로 배치(기본값)
+        row-reverse : 오른쪽에서 왼쪽으로 행으로 배치
+        column : 위에서 아래로 열로 배치
+        column-reverse : 아래에서 위로(뒤집어서) 열로 배치
+      
+      */
+
+      /* flex-direction: row; */
+      /* flex-direction: row-reverse; */
+      /* flex-direction: column; */
+      /* flex-direction: column-reverse; */
+      
+
+      /*
+          justify-content
+         
+        <정렬>
+        flex-start : 왼쪽 정렬(기본값)
+        flex-end : 오른쪽 정렬
+        center : 가운데 정렬
+
+        <주축변경>
+        space-between : 첫번째와 마지막아이템을 양쪽 끝에 붙이고
+        space-around : 모든 아이템의 사이와 양끝에 동일한 간격을 부여
+        
+      */
+
+      /* justify-content: center; */
+      /* justify-content: flex-start; */
+      /* justify-content: flex-end; */
+      justify-content: space-around;
+      /* justify-content: space-between; */
+      
+
+    }
+
+  </style>
+</head>
+<body>
+  
+  <!-- 부모는 flex container 역할 -->
+  <div class="container">
+
+    <!-- 아래 5개 아이템은 자식 역할 -->
+    <div id="item_1" class="box"></div>
+    <div id="item_2" class="box"></div>
+    <div id="item_3" class="box"></div>
+    <div id="item_4" class="box"></div>
+    <div id="item_5" class="box"></div>
+  </div>
+</body>
+</html>

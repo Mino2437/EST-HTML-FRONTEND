@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>표 만들기</title>
+</head>
+<body>
+  
+  <!--
+  table
+  tr : table row
+  th : table header , 테이블 헤더를 사용해서 데이터를 표현하기위한 줄이다라는것을 표시
+  td : table data , 헤더가 아닌줄에 테이블 데이터를 넣어 사용
+
+  ㅁ ㅁ ㅁ
+  ㅁ ㅁ ㅁ
+  ㅁ ㅁ ㅁ
+  -->
+
+  <table border="1">
+    <tr>
+      <th>이름</th>
+      <th>나이</th>
+      <th>전공</th>
+      <th>성적</th>
+    </tr>
+    <tr>
+      <td>김철수</td>
+      <td>21</td>
+      <td>정보통신</td>
+      <td>A+</td>
+    </tr>
+    <tr>
+      <td>박민수</td>
+      <td>20</td>
+      <td>컴퓨터공학</td>
+      <td>D</td>
+    </tr>
+    <tr>
+      <td>이유리</td>
+      <td>23</td>
+      <td>전자공학</td>
+      <td>B+</td>
+    </tr>
+  </table>
+
+  <table border="4">
+    <thead>
+      <tr>
+        <th>No</th>
+        <th>컬럼1</th>
+        <th>컬럼2</th>
+        <th>컬럼3</th>
+        <th>컬럼4</th>
+      </tr>
+    </thead>
+
+    <tbody>
+
+      <tr>
+        <td>1</td>
+        <td colspan="2">col span 2</td>
+        <td rowspan="3">row span 3</td>
+        <td>.</td>
+      </tr>
+      
+      <tr>
+        <td>2</td>
+        <td>데이터</td>
+        <td>데이터</td>
+        <td></td>
+      </tr>
+
+    </tbody>
+  </table>
+  
+  <table border="4">
+    <!-- 캡션, 테이블의 제목 -->
+    <caption>영수증</caption>
+
+    <thead>
+      <tr>
+        <th>상품명</th>
+        <th>가격</th>
+        <th>수량</th>
+        <th>총액</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td>바나나</td>
+        <td>3000원</td>
+        <td>2</td>
+        <td>6000원</td>
+      </tr>
+      <tr>
+        <td>우유</td>
+        <td>4000원</td>
+        <td>1</td>
+        <td>4000원</td>
+      </tr>
+      <tr>
+        <td>닭가슴살</td>
+        <td>12000원</td>
+        <td>3</td>
+        <td>36000원</td>
+      </tr>
+    </tbody>
+
+    <tfoot>
+      <tr>
+        <td>총합</td>
+        <td colspan="3">53500</td> <!-- 세행 합치기 -->
+      </tr>
+    </tfoot>
+
+  </table>
+
+
+</body>
+</html>

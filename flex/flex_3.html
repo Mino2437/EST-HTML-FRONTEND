@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Flex Test 3</title>
+  <link rel="stylesheet" href="./flex_global.css">
+  
+  <style>
+    .container {
+      display: flex;
+      /* 퍼센트를 넣으면 창을 늘리거나 줄이면 컨테이너도 같이 늘리거나 줄어짐 */
+      /* width: 20%; */
+      width: 300px;
+
+      justify-content: center;
+      /* border도 넓이에 포함됨 */
+      /* 크기, 종류, 색상순 띄어쓰기로 */
+      border: .3px dashed gray;
+
+      /* flex-wrap
+          플렉스 아이템이 컨테이너를 초과할 경우 줄바꿈 여부를 설정
+          nowrap : 줄바꿈 없이 한 줄에 모두 배치(기본값)
+          wrap : 아이템이 한 줄에 모두 들어가지 않으면 다음줄로 이어짐
+          wrap-reverse : 줄바꿈시 역방향으로 배치 
+      
+      */
+
+      /* flex-wrap: wrap; */
+      /* 역순으로 뒤집기 */
+      flex-wrap: wrap-reverse;
+
+    }
+  </style>
+
+</head>
+<body>
+  
+  <div class="container">
+    <div id="item_1" class="box"></div>
+    <div id="item_2" class="box"></div>
+    <div id="item_3" class="box"></div>
+    <div id="item_4" class="box"></div>
+    <div id="item_5" class="box"></div>
+  </div>
+
+</body>
+</html>

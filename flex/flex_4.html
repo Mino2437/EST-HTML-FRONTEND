@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <link rel="stylesheet" href="./flex_global.css">
+
+  <style>
+
+    .container {
+      display: flex;
+      justify-content: center;
+      border: .3px dashed gray;
+    }
+
+    /*
+     flex-grow
+     아이템이 남은 공간을 어마나 차지할지를 결정합니다.
+    */
+
+    /* flex-grow의 기본은 0임, 0과 1이 있으면 1이어도 나머지공간을 다 차지하게 된다 */
+    .flex-grow-1 {
+      flex-grow: 1;
+    }
+
+    .flex-grow-2 {
+      flex-grow: 2;
+    }
+
+    /* 
+      flex-basis
+        width와 유사하지만, flex-grow와 함께 사용될 때 더 정확히 동작한다.
+    */
+
+    /* flex에서 동작시 줄어들고 늘어날 때 300px를 보정함, width는 다같이 늘고 줄어듦 */
+    .flex-basis { 
+      flex-basis: 300px;
+    }
+
+  </style>
+
+
+</head>
+<body>
+  
+  <div class="container">
+    <div id="item_1" class="box flex-basis"></div>
+    <div id="item_3" class="box flex-grow-1"></div>
+    <div id="item_2" class="box flex-grow-1"></div>
+  </div>
+
+
+
+</body>
+</html>

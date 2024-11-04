@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>CSS 적용</title>
+  <!-- <link rel="stylesheet" href="./inner/style.css"> -->
+  <link href="https://cdn.jsdelivr.net/npm/daisyui@4.12.14/dist/full.min.css" rel="stylesheet" type="text/css" />
+
+  <!-- box모델은 width, height 존재, -->
+  <style>
+    .box {
+      /* width: 150px;
+      height: 150px; */
+      width: 10em;
+      height: 10em;
+      background-color: #597B67;
+    }
+  </style>
+</head>
+<body style="
+  font-size: 30;
+  ">
+  <div style="
+    padding: 1em;
+    font-size: 30;
+    "> Lorem10 </div>
+  <div>
+    <!-- 스타일을 직접 줬기에 좀 더 선택자에 가까움, 따라서 글씨 색 전체 선언을해도 이 글씨만 빨간색으로 출력됨 -->
+    <span style="color: tomato; font-weight: bold;">
+      Important!
+    </span>
+    
+  </div>
+  <div>
+    <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Autem, voluptate.</p>
+  </div>
+  <div>
+    <div class="box"></div>
+  </div>
+  <div>
+    <button class="btn btn-success">Success</button>
+  </div>
+  
+    <!-- 렌더링 : html화면을 브라우저에서 보이게하는 것 -->
+
+</body>
+</html>
